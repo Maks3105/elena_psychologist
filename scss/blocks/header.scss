@@ -1,0 +1,30 @@
+.block-header {
+    height: 90px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+        margin-right: 136px;
+        margin-top: 15px;
+    }
+}
+
+.header__menu {
+    margin-right: 155px;
+
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &-item {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+    }
+}

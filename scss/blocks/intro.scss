@@ -1,0 +1,51 @@
+.intro-psihologist {
+    height: 670px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__about__1 h1 {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    &__about__1 h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 70px;
+    }
+
+    &__about__1 p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+    }
+
+    &__about__2 p {
+        font-family: 'Lato', Arial, sans-serif;
+        font-weight: 400;
+        font-style: light;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+
+    &__photo {
+        height: 554px;
+        width: 830px;
+        margin-top: 56px;
+    }
+}
