@@ -1,11 +1,13 @@
 .block-header {
-    height: 90px;
+    height: 88px;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    background-color: rgba(243, 243, 243, 0.5);
 
     &__logo {
         margin-right: 136px;
@@ -14,7 +16,7 @@
 }
 
 .header__menu {
-    margin-right: 155px;
+    margin-right: 105px;
 
     &-list {
         display: flex;
@@ -26,5 +28,6 @@
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
+        color: #2F2A27;
     }
 }

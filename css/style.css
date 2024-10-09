@@ -67,17 +67,20 @@ body {
 }
 
 .wrap {
-  max-height: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .block-header {
-  height: 90px;
+  height: 88px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  background-color: rgba(243, 243, 243, 0.5);
 }
 .header__logo {
   margin-right: 136px;
@@ -85,7 +88,7 @@ body {
 }
 
 .header__menu {
-  margin-right: 155px;
+  margin-right: 105px;
 }
 .header__menu-list {
   display: flex;
@@ -96,6 +99,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
+  color: #2F2A27;
 }
 
 .intro-psihologist {
@@ -103,32 +107,57 @@ body {
 }
 
 .description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url(../../images/photo.png);
+  height: 670px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .description__about {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .description__about__1 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 30px;
+  margin-top: 136px;
+  margin-left: -2px;
+  color: #2f2a27;
+}
+.description__about__1 hr {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: #333;
 }
 .description__about__1 h2 {
-  font-family: "Lato", sans-serif;
+  height: 70px;
+  font-size: 70px;
+  font-family: "Lato", monospace;
   font-weight: 300;
   font-style: normal;
-  font-size: 70px;
+  margin-left: -6px;
+  color: #2f2a27;
 }
 .description__about__1 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
+  margin-top: 30px;
+  color: #535456;
+}
+.description__about__1 p > img {
+  width: 15px;
+  margin-bottom: 6px;
+}
+.description__about__2 {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
 }
 .description__about__2 p {
   font-family: "Lato", Arial, sans-serif;
@@ -136,11 +165,81 @@ body {
   font-style: light;
   font-size: 30px;
   line-height: 30px;
+  color: #535456;
 }
-.description__photo {
-  height: 554px;
-  width: 830px;
-  margin-top: 56px;
+.description__about__2 a {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #2f2a27;
+  width: 190px;
+  height: 42px;
+  border: 1px solid black;
+  margin-top: 23px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description__about__2 a:hover {
+  background-color: #2f2a27;
+  color: #f3f3f3;
+  transition: 0.4s;
+}
+
+.achievements {
+  margin-top: 60px;
+  height: 426px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+.achievements__part-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.achievements__part-1 li {
+  width: 368px;
+  height: 58px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.achievements__part-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
+}
+.achievements__part-2 li {
+  width: 368px;
+  height: 98px;
+  margin-right: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.achievements__part-3 {
+  margin-top: 41px;
+}
+.achievements__part-3 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.achievements span {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
