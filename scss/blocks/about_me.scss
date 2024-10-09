@@ -1,22 +1,4 @@
 .about-me {
-    &__h2 {
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        margin-left: -2px;
-        color: #2f2a27;
-    }
-
-    &__hr {
-        margin-top: 3px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        width: 92px;
-        height:1px;
-        border:none;
-        background-color:#333;
-    }
-
     &__experience {
         margin-top: 105px;
         display: flex;

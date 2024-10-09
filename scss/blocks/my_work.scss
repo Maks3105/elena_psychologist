@@ -1,0 +1,30 @@
+.my-work__examples {
+    margin-top: 47px;
+
+    &__consulting {
+        display: flex;
+        align-items: center;
+
+        & p {
+            font-family: 'Lato', sans-serif;
+            font-size: 26px;
+        }
+
+        &__inner-block {
+            display: flex;
+            align-content: stretch;
+            margin-left: 149px;
+            width: 581px;
+
+            & li {
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                padding: 16px;
+                border: 1px solid black;
+                border-radius: 4px;
+                margin: 20px 40px;
+            }
+        }
+
+    }
+}

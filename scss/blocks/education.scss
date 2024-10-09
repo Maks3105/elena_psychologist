@@ -1,0 +1,39 @@
+.education {
+    margin-top: 112px;
+    margin-bottom: 100px;
+}
+
+.education__block-list {
+    margin-top: 90px;
+
+    & li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & img {
+            margin-right: 65px;
+        }
+    }
+
+    &__list__inner-div {
+        display: flex;
+        align-items: baseline;
+
+        & div {
+            margin-left: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        & span {
+            font-weight: 400;
+        }
+    }
+
+    & hr {
+        width: 1160px;
+        margin: 40px 0 40px 40px;
+    }
+}
