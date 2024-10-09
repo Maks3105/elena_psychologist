@@ -102,10 +102,6 @@ body {
   color: #2F2A27;
 }
 
-.intro-psihologist {
-  height: 670px;
-}
-
 .description {
   background-image: url(../../images/photo.png);
   height: 670px;
@@ -240,6 +236,133 @@ body {
 
 .achievements span {
   font-weight: 400;
+}
+
+.about-me {
+  margin-bottom: 50px;
+}
+.about-me__h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: -2px;
+  color: #2f2a27;
+}
+.about-me__hr {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 92px;
+  height: 1px;
+  border: none;
+  background-color: #333;
+}
+.about-me__experience {
+  margin-top: 105px;
+  display: flex;
+}
+.about-me__experience__photo img {
+  width: 372px;
+  height: 491px;
+}
+.about-me__experience__content {
+  margin-left: 47px;
+}
+.about-me__experience__content__list hr:first-child {
+  margin-top: 40px;
+}
+.about-me__experience__content__list hr {
+  width: 783px;
+  height: 1px;
+  background-color: #333;
+}
+.about-me__experience__content__list li {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  height: 37px;
+  padding-left: 183px;
+  display: flex;
+  align-items: center;
+}
+.about-me__experience__content__list li > p:first-child {
+  margin-right: 120px;
+}
+.about-me__experience__content__list li img {
+  width: 15px;
+  margin-bottom: 6px;
+}
+.about-me__experience__content__numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+.about-me__experience__content__numbers div {
+  height: 91px;
+  width: 204px;
+  margin-top: 40px;
+}
+.about-me__experience__content__numbers div > p:first-child {
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  color: #AAAAAA;
+}
+.about-me__experience__content__numbers div > p:last-child {
+  width: 168px;
+  margin-top: -10px;
+  margin-left: 40px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.about-me__experience__content__commit-1 {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -365px;
+}
+.about-me__experience__content__commit-1 div:first-child {
+  height: 200px;
+  width: 550px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  background-color: #F3F3F3;
+}
+.about-me__experience__content__commit-1 div:last-child {
+  width: 549px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.about-me__experience__content__commit-2 {
+  height: 100px;
+  width: 783px;
+  border-left: 2px solid black;
+  margin-top: 42px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.about-me__experience__content__commit-2 span {
+  font-weight: 500;
+}
+.about-me__experience__content h3 {
+  font-size: 38px;
+  font-weight: 300;
+  margin-top: -35px;
 }
 
 /*# sourceMappingURL=style.css.map */
