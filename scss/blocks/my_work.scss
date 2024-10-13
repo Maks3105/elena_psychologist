@@ -1,30 +1,64 @@
+.my-work img {
+    margin-left: 628px;
+}
+
 .my-work__examples {
     margin-top: 47px;
+
+    &__main-p {
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+    }
 
     &__consulting {
         display: flex;
         align-items: center;
 
-        & p {
-            font-family: 'Lato', sans-serif;
-            font-size: 26px;
-        }
-
-        &__inner-block {
+        &__list-block {
             display: flex;
-            align-content: stretch;
+            flex-direction: column;
             margin-left: 149px;
-            width: 581px;
 
-            & li {
+            & div {
+                display: flex;
+                align-items: center;
+            }
+
+            & p {
+                display: flex;
+                align-items: center;
                 font-family: 'Roboto', sans-serif;
                 font-size: 22px;
                 padding: 16px;
                 border: 1px solid black;
                 border-radius: 4px;
-                margin: 20px 40px;
+                margin: 0 20px 20px 0;
             }
         }
 
+    }
+
+    &__support {
+        display: flex;
+        align-items: center;
+
+        &__list-block {
+
+            display: flex;
+            align-items: center;
+
+            & div p {
+                display: flex;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                padding: 16px;
+                border: 1px solid black;
+                border-radius: 4px;
+                margin: 0 20px 20px 0;
+            }
+        }
+
+        
     }
 }

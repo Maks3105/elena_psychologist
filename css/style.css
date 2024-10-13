@@ -393,30 +393,57 @@ body {
   margin: 40px 0 40px 40px;
 }
 
+.my-work img {
+  margin-left: 628px;
+}
+
 .my-work__examples {
   margin-top: 47px;
+}
+.my-work__examples__main-p {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
 }
 .my-work__examples__consulting {
   display: flex;
   align-items: center;
 }
-.my-work__examples__consulting p {
-  font-family: "Lato", sans-serif;
-  font-size: 26px;
-}
-.my-work__examples__consulting__inner-block {
+.my-work__examples__consulting__list-block {
   display: flex;
-  align-content: stretch;
+  flex-direction: column;
   margin-left: 149px;
-  width: 581px;
 }
-.my-work__examples__consulting__inner-block li {
+.my-work__examples__consulting__list-block div {
+  display: flex;
+  align-items: center;
+}
+.my-work__examples__consulting__list-block p {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   padding: 16px;
   border: 1px solid black;
   border-radius: 4px;
-  margin: 20px 40px;
+  margin: 0 20px 20px 0;
+}
+.my-work__examples__support {
+  display: flex;
+  align-items: center;
+}
+.my-work__examples__support__list-block {
+  display: flex;
+  align-items: center;
+}
+.my-work__examples__support__list-block div p {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 20px 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
