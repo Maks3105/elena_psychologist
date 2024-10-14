@@ -571,4 +571,48 @@ body {
   margin-right: 76px;
 }
 
+.block-main-details {
+  padding-bottom: 120px;
+}
+
+.main-details__content {
+  margin-top: 61px;
+  padding-left: 17px;
+}
+.main-details__content__div {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+.main-details__content__div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 0;
+}
+.main-details__content__div div h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.main-details__content__div div img {
+  margin-right: 5px;
+  padding: 5px;
+}
+.main-details__content__div div:hover {
+  cursor: pointer;
+}
+.main-details__content__div div:hover img {
+  transition: 0.6s;
+  border-radius: 50px;
+  background-color: rgba(170, 170, 170, 0.67);
+  cursor: pointer;
+}
+.main-details__content hr {
+  height: 1px;
+  border: none;
+  background-color: #333;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
