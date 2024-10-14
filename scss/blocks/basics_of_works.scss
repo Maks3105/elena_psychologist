@@ -1,0 +1,47 @@
+.block-basics-work {
+    margin-top: 120px;
+}
+
+.basics-work {
+    &__content {
+        margin-top: 68px;
+
+        & p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        & p:first-child {
+            font-size: 24px;
+            margin-top: 157px;
+        }
+
+        & p:nth-child(2) {
+            margin-top: 31px;
+        }
+
+        &__01 {
+            background-image: url(/images/background/01.png);
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            padding-left: 190px;
+        }
+
+        &__02 {
+            background-image: url(/images/background/02.png);
+            background-repeat: no-repeat;
+            background-position-x: 136px;
+            padding-left: 419px;
+            margin-top: -60px;
+
+            & p:first-child {
+                padding-top: 170px;
+            }
+        }
+    }
+
+    margin-bottom: 150px;
+}
