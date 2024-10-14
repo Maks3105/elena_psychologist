@@ -90,16 +90,40 @@ body {
   background-color: #333;
 }
 
+.main__a {
+  font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #2f2a27;
+  background-color: #f3f3f3;
+  width: 190px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__a:hover {
+  background-color: #2f2a27;
+  color: #f3f3f3;
+  transition: 0.4s;
+}
+
 .block-header {
   height: 88px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgba(243, 243, 243, 0.5);
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
   position: fixed;
-  background-color: rgba(243, 243, 243, 0.5);
 }
 .header__logo {
   margin-right: 136px;
@@ -119,6 +143,10 @@ body {
   font-weight: 300;
   font-style: normal;
   color: #2F2A27;
+}
+
+.block-intro-psihologist {
+  padding-top: 80px;
 }
 
 .description {
@@ -174,24 +202,8 @@ body {
   color: #535456;
 }
 .description__about__2 a {
-  font-family: "Roboto", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  color: #2f2a27;
-  width: 190px;
-  height: 42px;
-  border: 1px solid black;
   margin-top: 23px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.description__about__2 a:hover {
-  background-color: #2f2a27;
-  color: #f3f3f3;
-  transition: 0.4s;
 }
 
 .achievements {
@@ -248,9 +260,6 @@ body {
   font-weight: 400;
 }
 
-.about-me {
-  margin-bottom: 50px;
-}
 .about-me__experience {
   margin-top: 105px;
   display: flex;
@@ -454,11 +463,9 @@ body {
 
 .block-basics-work {
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
-.basics-work {
-  margin-bottom: 150px;
-}
 .basics-work__content {
   margin-top: 68px;
 }
@@ -491,6 +498,77 @@ body {
 }
 .basics-work__content__02 p:first-child {
   padding-top: 170px;
+}
+
+.block-interaction-formats {
+  margin-bottom: 120px;
+  height: 649px;
+  background-image: url(/images/background/interaction.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+}
+.block-interaction-formats h2 {
+  color: #FFFFFF;
+}
+.block-interaction-formats hr {
+  height: 0.1px;
+  border: 1px solid #FFFFFF;
+  border-bottom-width: 0;
+}
+
+.first-p {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.interaction-formats {
+  padding-top: 130px;
+}
+.interaction-formats__content {
+  margin-top: 90px;
+}
+.interaction-formats__content__for-one {
+  display: flex;
+  justify-content: space-between;
+}
+.interaction-formats__content__for-one div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 81px;
+}
+.interaction-formats__content__for-one div img {
+  width: 90px;
+  margin-right: 22px;
+}
+.interaction-formats__content__for-one div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+.interaction-formats__content__for-one div:nth-child(2) p {
+  margin-right: 76px;
+}
+.interaction-formats__content__for-two {
+  display: flex;
+  justify-content: space-between;
+}
+.interaction-formats__content__for-two div {
+  display: flex;
+  align-items: center;
+}
+.interaction-formats__content__for-two div img {
+  width: 90px;
+  margin-right: 22px;
+}
+.interaction-formats__content__for-two div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 55px;
+}
+.interaction-formats__content__for-two div:nth-child(2) p {
+  margin-right: 76px;
 }
 
 /*# sourceMappingURL=style.css.map */

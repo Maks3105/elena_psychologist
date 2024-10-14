@@ -1,13 +1,16 @@
 .block-header {
     height: 88px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(243, 243, 243, 0.5);
+
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: fixed;
-    background-color: rgba(243, 243, 243, 0.5);
 
     &__logo {
         margin-right: 136px;

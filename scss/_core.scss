@@ -26,3 +26,25 @@ body {
     border:none;
     background-color:#333;
 }
+
+.main__a {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #2f2a27;
+    background-color: #f3f3f3;
+    width: 190px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__a:hover {
+    background-color: #2f2a27;
+    color: #f3f3f3;
+    transition: 0.4s;
+}
