@@ -393,8 +393,11 @@ body {
   margin: 40px 0 40px 40px;
 }
 
-.my-work img {
+.my-work__img-1 {
   margin-left: 628px;
+}
+.my-work__img-2 {
+  margin-top: 70px;
 }
 
 .my-work__examples {
@@ -434,6 +437,9 @@ body {
 .my-work__examples__support__list-block {
   display: flex;
   align-items: center;
+}
+.my-work__examples__support__list-block div {
+  margin: 60px 0 0 164px;
 }
 .my-work__examples__support__list-block div p {
   display: flex;
