@@ -602,6 +602,7 @@ body {
 .main-details__content__div div img {
   margin-right: 5px;
   padding: 5px;
+  transition: 2s;
 }
 .main-details__content__div div:hover {
   cursor: pointer;
@@ -612,6 +613,10 @@ body {
   background-color: rgba(210, 210, 210, 0.888);
   cursor: pointer;
 }
+.main-details__content__div .btn_rotate {
+  transform: rotate(45deg);
+  transition: 2s;
+}
 .main-details__content__div p {
   padding-left: 5px;
   padding-bottom: 25px;
@@ -621,16 +626,13 @@ body {
 }
 .main-details__content hr {
   height: 1px;
+  margin: 0;
   border: none;
   background-color: #333;
+}
+.main-details__content .hr__open {
   transform: translateY(0);
   transition: 0.5s;
-}
-.main-details__content .hr-1__hidden {
-  margin: 0;
-  margin-top: -70px;
-  transform: translateY(100%);
-  transition: 0.9s;
 }
 .main-details__content .hr-1__hidden {
   margin: 0;
