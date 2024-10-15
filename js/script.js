@@ -24,10 +24,10 @@ btn_1.onclick = () => {
     btn_rotate_1.classList.toggle('btn_rotate');
 
     for (let i = 1; i < hrs.length; i++) {
-        console.log(i)
         if (hrs[i].classList.contains('hr__open')) {
+
             hrs[i].classList.remove('hr__open');
-            hrs[i].classList.add(hrs_hidden[i]);
+            hrs[i].classList.add(hrs_hidden_name_class[i]);
             btns_rotate[i].classList.toggle('btn_rotate');
         }
     }
@@ -41,7 +41,7 @@ btn_2.onclick = () => {
     for (let i = 0; i < hrs.length; i++) {
         if (hrs[i].classList.contains('hr__open') && i != 1) {
             hrs[i].classList.remove('hr__open');
-            hrs[i].classList.add(hrs_hidden[i]);
+            hrs[i].classList.add(hrs_hidden_name_class[i]);
             btns_rotate[i].classList.toggle('btn_rotate');
         }
     }
@@ -55,7 +55,7 @@ btn_3.onclick = () => {
     for (let i = 0; i < hrs.length; i++) {
         if (hrs[i].classList.contains('hr__open') && i != 2) {
             hrs[i].classList.remove('hr__open');
-            hrs[i].classList.add(hrs_hidden[i]);
+            hrs[i].classList.add(hrs_hidden_name_class[i]);
             btns_rotate[i].classList.toggle('btn_rotate');
         }
     }
@@ -68,10 +68,10 @@ btn_4.onclick = () => {
 
     for (let i = 0; i < hrs.length; i++) {
         if (hrs[i].classList.contains('hr__open') && i != 3) {
+
             hrs[i].classList.remove('hr__open');
-            hrs[i].classList.add(hrs_hidden[i]);
+            hrs[i].classList.add(hrs_hidden_name_class[i]);
             btns_rotate[i].classList.toggle('btn_rotate');
         }
     }
 };
-//
