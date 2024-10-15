@@ -151,7 +151,7 @@ body {
 }
 
 .description {
-  background-image: url("/images/photo.png");
+  background-image: url("./images/photo.png");
   height: 670px;
   background-repeat: no-repeat;
   background-position: right;
