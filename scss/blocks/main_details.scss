@@ -8,11 +8,16 @@
         padding-left: 17px;
 
         &__div {
+            background-color: #f3f3f3;
+            z-index: 2;
+            position: relative;
+
             & div {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 27px 0;
+                
 
                 & h4 {
                     font-size: 24px;
@@ -32,13 +37,17 @@
                 & img {
                     transition: 0.6s;
                     border-radius: 50px;
-                    background-color: rgba(170, 170, 170, 0.67);
+                    background-color: rgba(210, 210, 210, 0.888);
                     cursor: pointer;
                 }
             }
 
             & p {
-                //display: none;
+                padding-left: 5px;
+                padding-bottom: 25px;
+                display: block;
+                position: relative;
+                z-index: -1;
             }
 
             font-family: 'Lato', sans-serif;
@@ -51,7 +60,51 @@
             height:1px;
             border:none;
             background-color:#333;
-            margin: 0;
+            transform: translateY(0);
+            transition: 0.5s;
         }
+
+        & .hr-1__hidden {
+            margin: 0;
+            margin-top: -70px;
+            transform: translateY(100%);
+            transition: 0.9s;
+        }
+
+        & .hr-1__hidden {
+            margin: 0;
+            margin-top: -70px;
+            transform: translateY(100%);
+            transition: 0.9s;
+        }
+
+        & .hr-2__hidden {
+            margin: 0;
+            margin-top: -120px;
+            transform: translateY(100%);
+            transition: 0.9s;
+        }
+
+        & .hr-3__hidden {
+            margin: 0;
+            margin-top: -95px;
+            transform: translateY(100%);
+            transition: 0.9s;
+        }
+
+        & .hr-4__hidden {
+            margin: 0;
+            margin-top: -120px;
+            transform: translateY(100%);
+            transition: 0.9s;
+        }
+
+        .end_block {
+            height: 120px;
+            position: relative;
+            z-index: 3;
+            background-color: #f3f3f3;
+        }
+
     }
 }
