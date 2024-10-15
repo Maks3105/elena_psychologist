@@ -14,27 +14,22 @@ const hr_2 = document.getElementById('hr-2');
 const hr_3 = document.getElementById('hr-3');
 const hr_4 = document.getElementById('hr-4');
 
+const hrs = [hr_1, hr_2, hr_3, hr_4];
+const btns_rotate = [btn_rotate_1, btn_rotate_2, btn_rotate_3, btn_rotate_4];
+const hrs_hidden_name_class = ['hr-1__hidden', 'hr-2__hidden', 'hr-3__hidden', 'hr-4__hidden'];
+
 btn_1.onclick = () => {
     hr_1.classList.toggle('hr-1__hidden');
     hr_1.classList.toggle('hr__open');
     btn_rotate_1.classList.toggle('btn_rotate');
 
-    if (hr_2.classList.contains('hr__open')) {
-        hr_2.classList.remove('hr__open');
-        hr_2.classList.add('hr-2__hidden');
-        btn_rotate_2.classList.toggle('btn_rotate');
-    }
-
-    if (hr_3.classList.contains('hr__open')) {
-        hr_3.classList.remove('hr__open');
-        hr_3.classList.add('hr-3__hidden');
-        btn_rotate_3.classList.toggle('btn_rotate');
-    }
-
-    if (hr_4.classList.contains('hr__open')) {
-        hr_4.classList.remove('hr__open');
-        hr_4.classList.add('hr-4__hidden');
-        btn_rotate_4.classList.toggle('btn_rotate');
+    for (let i = 1; i < hrs.length; i++) {
+        console.log(i)
+        if (hrs[i].classList.contains('hr__open')) {
+            hrs[i].classList.remove('hr__open');
+            hrs[i].classList.add(hrs_hidden[i]);
+            btns_rotate[i].classList.toggle('btn_rotate');
+        }
     }
 };
 
@@ -43,22 +38,12 @@ btn_2.onclick = () => {
     hr_2.classList.toggle('hr__open');
     btn_rotate_2.classList.toggle('btn_rotate');
 
-    if (hr_1.classList.contains('hr__open')) {
-        hr_1.classList.remove('hr__open');
-        hr_1.classList.add('hr-1__hidden');
-        btn_rotate_1.classList.toggle('btn_rotate');
-    }
-
-    if (hr_3.classList.contains('hr__open')) {
-        hr_3.classList.remove('hr__open');
-        hr_3.classList.add('hr-3__hidden');
-        btn_rotate_3.classList.toggle('btn_rotate');
-    }
-
-    if (hr_4.classList.contains('hr__open')) {
-        hr_4.classList.remove('hr__open');
-        hr_4.classList.add('hr-4__hidden');
-        btn_rotate_4.classList.toggle('btn_rotate');
+    for (let i = 0; i < hrs.length; i++) {
+        if (hrs[i].classList.contains('hr__open') && i != 1) {
+            hrs[i].classList.remove('hr__open');
+            hrs[i].classList.add(hrs_hidden[i]);
+            btns_rotate[i].classList.toggle('btn_rotate');
+        }
     }
 };
 
@@ -67,22 +52,12 @@ btn_3.onclick = () => {
     hr_3.classList.toggle('hr__open');
     btn_rotate_3.classList.toggle('btn_rotate');
 
-    if (hr_2.classList.contains('hr__open')) {
-        hr_2.classList.remove('hr__open');
-        hr_2.classList.add('hr-2__hidden');
-        btn_rotate_2.classList.toggle('btn_rotate');
-    }
-
-    if (hr_1.classList.contains('hr__open')) {
-        hr_1.classList.remove('hr__open');
-        hr_1.classList.add('hr-1__hidden');
-        btn_rotate_1.classList.toggle('btn_rotate');
-    }
-
-    if (hr_4.classList.contains('hr__open')) {
-        hr_4.classList.remove('hr__open');
-        hr_4.classList.add('hr-4__hidden');
-        btn_rotate_4.classList.toggle('btn_rotate');
+    for (let i = 0; i < hrs.length; i++) {
+        if (hrs[i].classList.contains('hr__open') && i != 2) {
+            hrs[i].classList.remove('hr__open');
+            hrs[i].classList.add(hrs_hidden[i]);
+            btns_rotate[i].classList.toggle('btn_rotate');
+        }
     }
 };
 
@@ -91,21 +66,11 @@ btn_4.onclick = () => {
     hr_4.classList.toggle('hr__open');
     btn_rotate_4.classList.toggle('btn_rotate');
 
-    if (hr_2.classList.contains('hr__open')) {
-        hr_2.classList.remove('hr__open');
-        hr_2.classList.add('hr-2__hidden');
-        btn_rotate_2.classList.toggle('btn_rotate');
-    }
-
-    if (hr_3.classList.contains('hr__open')) {
-        hr_3.classList.remove('hr__open');
-        hr_3.classList.add('hr-3__hidden');
-        btn_rotate_3.classList.toggle('btn_rotate');
-    }
-
-    if (hr_1.classList.contains('hr__open')) {
-        hr_1.classList.remove('hr__open');
-        hr_1.classList.add('hr-1__hidden');
-        btn_rotate_1.classList.toggle('btn_rotate');
+    for (let i = 0; i < hrs.length; i++) {
+        if (hrs[i].classList.contains('hr__open') && i != 3) {
+            hrs[i].classList.remove('hr__open');
+            hrs[i].classList.add(hrs_hidden[i]);
+            btns_rotate[i].classList.toggle('btn_rotate');
+        }
     }
 };
