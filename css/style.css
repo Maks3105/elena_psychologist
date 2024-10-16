@@ -204,9 +204,34 @@ body {
   margin-top: 30px;
   color: #535456;
 }
-.description__about__1 p > img {
+.description .img_info {
   width: 15px;
   margin-bottom: 6px;
+  margin-left: 5px;
+}
+.description .div_info {
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+}
+.description .div_info p {
+  margin: 0;
+}
+.description .div_info div::after {
+  content: "Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025";
+  position: absolute;
+  visibility: hidden;
+  height: 55px;
+  width: 274px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(240, 248, 255, 0.2901960784);
+  padding: 14px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.description .div_info div:hover:after {
+  visibility: visible;
 }
 .description__about__2 {
   margin-top: 62px;
@@ -761,6 +786,10 @@ body {
 .footer__content div {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+.footer__content__about {
+  padding-left: 10px;
 }
 .footer__content__about p:first-child {
   font-family: "Lato", sans-serif;
@@ -797,6 +826,7 @@ body {
 }
 .footer__content__adress {
   align-items: end;
+  padding-right: 10px;
 }
 .footer__content__adress p {
   font-size: 20px;
