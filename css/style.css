@@ -429,15 +429,97 @@ body {
 }
 
 .education__block-list {
-  margin-top: 90px;
+  margin-top: 50px;
 }
 .education__block-list li {
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
-.education__block-list li img {
-  margin-right: 65px;
+.education__block-list li .div-arrow {
+  width: 90px;
+  padding-right: 65px;
+  transition: 1s;
+}
+.education__block-list .ed-two::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 500px;
+  right: -12%;
+  background-image: url(/images/education/2013.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.education__block-list .ed-two:hover:after {
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.education__block-list .ed-three::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 500px;
+  right: -12%;
+  top: -30%;
+  background-image: url(/images/education/2011.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.education__block-list .ed-three:hover:after {
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.education__block-list .ed-four::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 500px;
+  right: -12%;
+  top: -40%;
+  background-image: url(/images/education/2009.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.education__block-list .ed-four:hover:after {
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.education__block-list .ed-five::after {
+  position: absolute;
+  content: "";
+  width: 559px;
+  height: 500px;
+  right: -12%;
+  background-image: url(/images/education/2003.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.education__block-list .ed-five:hover:after {
+  transition: 1s;
+  opacity: 1;
+  visibility: visible;
+}
+.education__block-list li:hover .div-arrow {
+  width: 30px;
+  transition: 1s;
 }
 .education__block-list__list__inner-div {
   display: flex;
@@ -454,7 +536,7 @@ body {
 }
 .education__block-list hr {
   width: 1160px;
-  margin: 40px 0 40px 40px;
+  margin: 0;
 }
 
 .block-my-work {

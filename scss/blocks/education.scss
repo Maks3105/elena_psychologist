@@ -9,15 +9,108 @@
 }
 
 .education__block-list {
-    margin-top: 90px;
+    margin-top: 50px;
 
     & li {
+        padding: 40px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
 
-        & img {
-            margin-right: 65px;
+        & .div-arrow {
+            width: 90px;
+            padding-right: 65px;
+            transition: 1s;
+        }
+    }
+
+    & .ed-two::after {
+        position:absolute;
+        content: '';
+        width: 400px;
+        height: 500px;
+        right: -12%;
+        background-image: url(/images/education/2013.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+        transition: 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    & .ed-two:hover:after {
+        transition: 1s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & .ed-three::after {
+        position:absolute;
+        content: '';
+        width: 400px;
+        height: 500px;
+        right: -12%;
+        top: -30%;
+        background-image: url(/images/education/2011.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+        transition: 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    & .ed-three:hover:after {
+        transition: 1s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & .ed-four::after {
+        position:absolute;
+        content: '';
+        width: 400px;
+        height: 500px;
+        right: -12%;
+        top: -40%;
+        background-image: url(/images/education/2009.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+        transition: 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    & .ed-four:hover:after {
+        transition: 1s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & .ed-five::after {
+        position:absolute;
+        content: '';
+        width: 559px;
+        height: 500px;
+        right: -12%;
+        background-image: url(/images/education/2003.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+        transition: 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    & .ed-five:hover:after {
+        transition: 1s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & li:hover {
+        & .div-arrow {
+            width: 30px;
+            transition: 1s;
         }
     }
 
@@ -39,6 +132,6 @@
 
     & hr {
         width: 1160px;
-        margin: 40px 0 40px 40px;
+        margin: 0;
     }
 }
