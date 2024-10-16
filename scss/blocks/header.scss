@@ -32,5 +32,23 @@
         font-weight: 300;
         font-style: normal;
         color: #2F2A27;
+        transition: 1s;
+        position: relative;
+    }
+
+    &-item::after {
+        content: '';
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid #ffffff00;
+        transition: 0.4s;
+
+    }
+
+    &-item:hover:after{
+        bottom: 0;
+        border-bottom: 1px solid black;
     }
 }

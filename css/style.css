@@ -61,6 +61,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
@@ -144,6 +148,21 @@ body {
   font-weight: 300;
   font-style: normal;
   color: #2F2A27;
+  transition: 1s;
+  position: relative;
+}
+.header__menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.4s;
+}
+.header__menu-item:hover:after {
+  bottom: 0;
+  border-bottom: 1px solid black;
 }
 
 .block-intro-psihologist {
@@ -209,7 +228,7 @@ body {
 
 .achievements {
   margin-top: 60px;
-  height: 426px;
+  height: 336px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 22px;
@@ -259,6 +278,11 @@ body {
 
 .achievements span {
   font-weight: 400;
+}
+
+.block-about-me {
+  box-sizing: border-box;
+  padding-top: 90px;
 }
 
 .about-me__experience {
@@ -369,9 +393,14 @@ body {
   margin-top: -35px;
 }
 
+.block-education {
+  box-sizing: border-box;
+  padding-top: 90px;
+}
+
 .education {
-  margin-top: 112px;
-  margin-bottom: 100px;
+  margin-top: 22px;
+  margin-bottom: 30px;
 }
 
 .education__block-list {
@@ -401,6 +430,11 @@ body {
 .education__block-list hr {
   width: 1160px;
   margin: 40px 0 40px 40px;
+}
+
+.block-my-work {
+  box-sizing: border-box;
+  padding-top: 90px;
 }
 
 .my-work__img-1 {
@@ -463,8 +497,10 @@ body {
 }
 
 .block-basics-work {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  padding-top: 90px;
 }
 
 .basics-work__content {
@@ -499,6 +535,11 @@ body {
 }
 .basics-work__content__02 p:first-child {
   padding-top: 170px;
+}
+
+.link-block-interaction-formats {
+  padding-top: 90px;
+  box-sizing: border-box;
 }
 
 .block-interaction-formats {

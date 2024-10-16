@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <title>Document</title>
+    <title>Психолог в Риме - Елена Немилова</title>
 </head>
 <body class="container">
 
@@ -21,12 +21,12 @@
 
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#">Обо мне</a></li>
-                        <li class="header__menu-item"><a href="#">Образование и квалификация</a></li>
+                        <li class="header__menu-item"><a href="#about_me">Обо мне</a></li>
+                        <li class="header__menu-item"><a href="#education">Образование и квалификация</a></li>
                         <li class="header__menu-item"><a href="#">Полезные ресурсы</a></li>
-                        <li class="header__menu-item"><a href="#">Сфера работы</a></li>
-                        <li class="header__menu-item"><a href="#">Услуги</a></li>
-                        <li class="header__menu-item"><a href="#">Контакты</a></li>
+                        <li class="header__menu-item"><a href="#my_work">Сфера работы</a></li>
+                        <li class="header__menu-item"><a href="#interaction_formats">Услуги</a></li>
+                        <li class="header__menu-item"><a href="#adress">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -95,7 +95,7 @@
     <!-- ENDS INTRO -->
 
     <!-- STARTS ABOUT ME -->
-    <section class="block-about-me">
+    <section class="block-about-me" id="about_me">
         <div class="wrap">
             <div class="about-me">
                 <h2 class="main_h2">ОБО МНЕ</h2>
@@ -181,7 +181,7 @@
     <!-- STARTS ABOUT ME -->
     
     <!-- STARTS EDUCATION -->
-     <section class="block-education">
+     <section class="block-education" id="education">
         <div class="wrap">
             <div class="education">
                 <h2 class="main_h2">Образование и квалификация</h2>
@@ -252,7 +252,7 @@
     <!-- ENDS EDUCATION -->
 
     <!-- STARTS MY WORK -->
-     <section class="block-my-work">
+     <section class="block-my-work" id="my_work">
         <div class="wrap">
             <div class="my-work">
                 <h2 class="main_h2">Сферы моей работы</h2>
@@ -325,45 +325,47 @@
     <!-- ENDS BASICS OF WORK -->
     
     <!-- STARTS INTERACTION FORMATS -->
-     <section class="block-interaction-formats">
-        <div class="wrap">
-            <div class="interaction-formats">
-                <h2 class="main_h2">форматы взаимодействия</h2>
-                <hr class="main_hr">
-                <div class="interaction-formats__content">
-                    <div class="interaction-formats__content__for-one">
-                        <div>
-                            <img src="/images/icon/white_arrow.png" alt="">
-                            <p class="first-p">
-                                Индивидуальная<br>консультация
-                            </p>
+     <div id="interaction_formats" class="link-block-interaction-formats">
+        <section class="block-interaction-formats">
+            <div class="wrap">
+                <div class="interaction-formats">
+                    <h2 class="main_h2">форматы взаимодействия</h2>
+                    <hr class="main_hr">
+                    <div class="interaction-formats__content">
+                        <div class="interaction-formats__content__for-one">
+                            <div>
+                                <img src="/images/icon/white_arrow.png" alt="">
+                                <p class="first-p">
+                                    Индивидуальная<br>консультация
+                                </p>
+                            </div>
+                            <div>
+                                <p>очно / онлайн</p>
+                                <p>50 мин</p>
+                                <p>80 €</p>
+                            </div>
+                            <a href="#" class="main__a">Записаться ↗</a>
                         </div>
-                        <div>
-                            <p>очно / онлайн</p>
-                            <p>50 мин</p>
-                            <p>80 €</p>
+                        
+                        <div class="interaction-formats__content__for-two">
+                            <div>
+                                <img src="/images/icon/white_arrow.png" alt="">
+                                <p class="first-p">
+                                    Консультация<br>для пары
+                                </p>
+                            </div>
+                            <div>
+                                <p>очно / онлайн</p>
+                                <p>80 мин</p>
+                                <p>110 €</p>
+                            </div>
+                            <a class="main__a" href="#">Записаться ↗</a>
                         </div>
-                        <a href="#" class="main__a">Записаться ↗</a>
-                    </div>
-                    
-                    <div class="interaction-formats__content__for-two">
-                        <div>
-                            <img src="/images/icon/white_arrow.png" alt="">
-                            <p class="first-p">
-                                Консультация<br>для пары
-                            </p>
-                        </div>
-                        <div>
-                            <p>очно / онлайн</p>
-                            <p>80 мин</p>
-                            <p>110 €</p>
-                        </div>
-                        <a class="main__a" href="#">Записаться ↗</a>
                     </div>
                 </div>
             </div>
-        </div>
-     </section>
+         </section>
+     </div>
     <!-- ENDS INTERACTION FORMATS -->
     
     <!-- STARTS MAIN DETAILS -->
@@ -464,7 +466,7 @@
     <!-- ENDS QUOTE -->
 
     <!-- STARTS CONSULTING -->
-     <section class="block-consulting">
+     <section class="block-consulting" id="adress">
         <div class="wrap">
             <div class="consulting">
                 <h2 class="main_h2">Запишитесь на консультацию</h2>
