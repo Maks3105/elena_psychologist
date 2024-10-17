@@ -18,29 +18,68 @@
     &__experience__content {
         margin-left: 47px;
 
-        &__list hr:first-child {
-            margin-top: 40px;
-        }
-
-        &__list hr {
-            width: 783px;
-            height:1px;
-            background-color:#333;
-        }
-
         &__list li {
             font-family: 'Lato', sans-serif;
             font-size: 16px;
             font-weight: 400;
             text-transform: uppercase;
             height: 37px;
-            padding-left: 183px;
             display: flex;
             align-items: center;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
         }
 
-        &__list li > p:first-child {
+        & .li-1, .li-2, .li-3 {
+            border-top: 2px solid black;
+            padding: 16px 0;
+        }
+
+        & .li-1 {
+            margin-top: 40px;
+            transition: all 0.8s ease 0.2s;
+        }
+
+        & .li-2 {
+            transition: all 0.8s ease 0.3s;
+        }
+
+        & .li-3 {
+            transition: all 0.8s ease 0.4s;
+            border-bottom: 2px solid black;
+
+            span::after {
+                content: 'Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025';
+                position: absolute;
+                visibility: hidden;
+                height: 55px;
+                width: 274px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+                background-color: #f0f8ff;
+                padding: 14px;
+                margin-left: 5px;
+                transition: 0.5s;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                margin-top: -43px;
+                color: #535456;
+            }
+
+            span:hover::after {
+                visibility: visible;
+            }
+        }
+
+        &__list li p {
             margin-right: 120px;
+        }
+
+        &__list li p:nth-child(1) {
+            margin-left: 183px;
         }
 
         &__list li img {
@@ -52,6 +91,10 @@
             display: flex;
             justify-content: space-between;
             margin-top: -20px;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0.2s;
 
             & div {
                 height: 91px;
@@ -84,6 +127,10 @@
             justify-content: space-between;
             align-items: center;
             margin-left: -365px;
+
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0.2s;
             
             & div:first-child {
                 height: 200px;
@@ -98,7 +145,7 @@
                 font-size: 20px;
                 font-style: italic;
                 background-color: #F3F3F3;
-
+                z-index: 2;
             }
 
             & div:last-child {
@@ -132,5 +179,9 @@
         font-size: 38px;
         font-weight: 300;
         margin-top: -35px;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0.0s;
+
     }
 }

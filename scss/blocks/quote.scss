@@ -14,12 +14,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        p {
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0.1s;
+        }
     }
 
     &__imgs {
         display: flex;
+        transform: translate(0px, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.0s;
+
+        .img-1 {
+        }
+
+        .img-2 {
+        }
+
+        .img-3 {
+        }
+
+        .img-4 {
+        }
         
-        & img, div{
+        & span, img, div{
             width: 300px;
             height: 260px;
         }

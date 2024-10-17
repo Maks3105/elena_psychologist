@@ -82,6 +82,9 @@ body {
   margin-left: -2px;
   color: #2f2a27;
   text-transform: uppercase;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 
 .main_hr {
@@ -92,6 +95,9 @@ body {
   height: 1px;
   border: none;
   background-color: #333;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.1s;
 }
 
 .main__a {
@@ -114,6 +120,11 @@ body {
   background-color: #2f2a27;
   color: #f3f3f3;
   transition: 0.4s;
+}
+
+._anim-items.__activ {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .block-header {
@@ -186,6 +197,9 @@ body {
   margin-top: 136px;
   margin-left: -2px;
   color: #2f2a27;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .description__about__1 h2 {
   height: 70px;
@@ -195,29 +209,22 @@ body {
   font-style: normal;
   margin-left: -6px;
   color: #2f2a27;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.2s;
 }
-.description__about__1 p {
+.description__about__1__p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
   margin-top: 30px;
   color: #535456;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
 }
-.description .img_info {
-  width: 15px;
-  margin-bottom: 6px;
-  margin-left: 5px;
-}
-.description .div_info {
-  display: flex;
-  position: relative;
-  transition: 0.5s;
-}
-.description .div_info p {
-  margin: 0;
-}
-.description .div_info div::after {
+.description__about__1__p span::after {
   content: "Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025";
   position: absolute;
   visibility: hidden;
@@ -229,9 +236,23 @@ body {
   padding: 14px;
   margin-left: 5px;
   transition: 0.5s;
+  font-size: 15px;
 }
-.description .div_info div:hover:after {
+.description__about__1__p span:hover:after {
   visibility: visible;
+}
+.description .img_info {
+  width: 15px;
+  margin-bottom: 6px;
+  margin-left: 5px;
+}
+.description .div_info {
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+}
+.description .div_info__p {
+  margin: 0;
 }
 .description__about__2 {
   margin-top: 62px;
@@ -245,10 +266,16 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #535456;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
 }
 .description__about__2 a {
   margin-top: 23px;
   border-radius: 4px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
 }
 
 .achievements {
@@ -262,6 +289,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .achievements__part-1 li {
   width: 368px;
@@ -277,6 +307,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 41px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.1s;
 }
 .achievements__part-2 li {
   width: 368px;
@@ -291,6 +324,9 @@ body {
 }
 .achievements__part-3 {
   margin-top: 41px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.2s;
 }
 .achievements__part-3 li {
   display: flex;
@@ -321,26 +357,59 @@ body {
 .about-me__experience__content {
   margin-left: 47px;
 }
-.about-me__experience__content__list hr:first-child {
-  margin-top: 40px;
-}
-.about-me__experience__content__list hr {
-  width: 783px;
-  height: 1px;
-  background-color: #333;
-}
 .about-me__experience__content__list li {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   height: 37px;
-  padding-left: 183px;
   display: flex;
   align-items: center;
+  transform: translate(0px, 120%);
+  opacity: 0;
 }
-.about-me__experience__content__list li > p:first-child {
+.about-me__experience__content .li-1, .about-me__experience__content .li-2, .about-me__experience__content .li-3 {
+  border-top: 2px solid black;
+  padding: 16px 0;
+}
+.about-me__experience__content .li-1 {
+  margin-top: 40px;
+  transition: all 0.8s ease 0.2s;
+}
+.about-me__experience__content .li-2 {
+  transition: all 0.8s ease 0.3s;
+}
+.about-me__experience__content .li-3 {
+  transition: all 0.8s ease 0.4s;
+  border-bottom: 2px solid black;
+}
+.about-me__experience__content .li-3 span::after {
+  content: "Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025";
+  position: absolute;
+  visibility: hidden;
+  height: 55px;
+  width: 274px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f0f8ff;
+  padding: 14px;
+  margin-left: 5px;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: -43px;
+  color: #535456;
+}
+.about-me__experience__content .li-3 span:hover::after {
+  visibility: visible;
+}
+.about-me__experience__content__list li p {
   margin-right: 120px;
+}
+.about-me__experience__content__list li p:nth-child(1) {
+  margin-left: 183px;
 }
 .about-me__experience__content__list li img {
   width: 15px;
@@ -350,6 +419,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: -20px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.2s;
 }
 .about-me__experience__content__numbers div {
   height: 91px;
@@ -376,6 +448,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-left: -365px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.2s;
 }
 .about-me__experience__content__commit-1 div:first-child {
   height: 200px;
@@ -390,6 +465,7 @@ body {
   font-size: 20px;
   font-style: italic;
   background-color: #F3F3F3;
+  z-index: 2;
 }
 .about-me__experience__content__commit-1 div:last-child {
   width: 549px;
@@ -416,6 +492,9 @@ body {
   font-size: 38px;
   font-weight: 300;
   margin-top: -35px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 
 .block-education {
@@ -628,6 +707,9 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 190px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .basics-work__content__01 .first_step {
   font-size: 24px;
@@ -666,6 +748,9 @@ body {
   background-position-x: 190px;
   padding-left: 480px;
   margin-top: 100px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .basics-work__content__02 p:first-child {
   padding-top: 170px;
@@ -852,10 +937,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+.quote__words p {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.1s;
+}
 .quote__imgs {
   display: flex;
+  transform: translate(0px, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
-.quote__imgs img, .quote__imgs div {
+.quote__imgs span, .quote__imgs img, .quote__imgs div {
   width: 300px;
   height: 260px;
 }
