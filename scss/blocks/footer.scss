@@ -50,6 +50,25 @@
                 border:none;
                 background-color:#333;
             }
+
+            & span::after{
+                content: 'Процесс обучения и сертификации в Università degli Studi Milano Bicocca завершится в декабре 2025';
+                position: absolute;
+                visibility: hidden;
+                height: 55px;
+                width: 274px;
+                border-radius: 4px;
+                box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+                background-color: #f0f8ff4a;
+                padding: 14px;
+                margin-left: 5px;
+                transition: 0.5s;
+            }
+
+            & span:hover:after {
+                visibility: visible;
+                transition: 0.5s;
+            }
         }
 
         &__links {

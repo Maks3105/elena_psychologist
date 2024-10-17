@@ -16,11 +16,6 @@
             margin-top: 10px;
         }
 
-        & p:first-child {
-            font-size: 24px;
-            margin-top: 157px;
-        }
-
         & p:nth-child(2) {
             margin-top: 31px;
         }
@@ -31,14 +26,50 @@
             display: flex;
             flex-direction: column;
             padding-left: 190px;
+
+            & .first_step {
+                font-size: 24px;
+                margin-top: 157px;
+            }
+
+            & div {
+                display: flex;
+
+                & .div_info_sessions {
+                    position: relative;
+                    margin-bottom: 10px;
+                    height: 19px;
+                    width: 19px;
+                }
+
+                & .div_info_sessions::after {
+                    position: absolute;
+                    content: 'Однако процесс терапии является цикличным, и возвращение к формулировке и уточнению целей будет происходить неоднократно';
+                    background-color: aquamarine;
+                    height: 75px;
+                    width: 262px;
+                    padding: 15px;
+                    margin-left: 25px;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+                    transition: 0.5s;
+                    background-color: #f0f8ff4a;
+                    visibility: hidden;
+                }
+
+                &.div_info_sessions:hover:after {
+                    visibility: visible;
+                    transition: 0.5s;
+                }
+            }
         }
 
         &__02 {
             background-image: url(/images/background/02.png);
             background-repeat: no-repeat;
-            background-position-x: 136px;
-            padding-left: 419px;
-            margin-top: -60px;
+            background-position-x: 190px;
+            padding-left: 480px;
+            margin-top: 100px;
 
             & p:first-child {
                 padding-top: 170px;
