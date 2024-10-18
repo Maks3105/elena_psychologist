@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="{% static "/css/style.css" %}" type="text/css">
     <title>Психолог в Риме - Елена Немилова</title>
 </head>
 <body class="container">
@@ -16,7 +18,7 @@
         <div class="wrap">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <img src="./images/icon/logo.svg" alt="">
+                    <img src="{% static "./images/icon/logo.svg" %}" alt="">
                 </a>
                 <div class="burger">
                     <span></span>
@@ -44,7 +46,7 @@
     <!-- STARTS INTRO -->
     <section class="block-intro-psihologist">
         <div class="wrap">
-            <div class="description _anim-items">
+            <div  class="description _anim-items">
                 <div class="description__about">
                     <div class="description__about__1">
                         <h1 class="_anim-items">ПСИХОЛОГ В РИМЕ</h1>
@@ -54,7 +56,7 @@
                             Эксперт когнитивных процессов<br>
                             Сексолог
                             <span>
-                                <img src="./images/icon/info.svg" alt="info" class="img_info">
+                                <img src="{% static "/images/icon/info.svg" %}" alt="info" class="img_info">
                             </span>
                         </p>
                     </div>
@@ -108,7 +110,7 @@
                 <div class="about-me__experience">
 
                     <div class="about-me__experience__photo _anim-items">
-                        <img src="./images/photo_2.png" alt="photo">
+                        <img src="{% static "./images/photo_2.png" %}" alt="photo">
                     </div>
         
                     <div class="about-me__experience__content">
@@ -127,7 +129,7 @@
                                 <p>
                                     сексолог
                                     <span>
-                                        <img src="./images/icon/info.svg" alt="info">
+                                        <img src="{% static "./images/icon/info.svg" %}" alt="info">
                                     </span>
                                 </p>
                             </li>
@@ -200,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="div-arrow">
-                                <img src="/images/icon/arrow.png" alt="arrow">
+                                <img src="{% static "/images/icon/arrow.png" %}" alt="arrow">
                             </div>     
                         </li>
                         <hr>
@@ -213,7 +215,7 @@
                                 </div>
                             </div>
                             <div class="div-arrow">
-                                <img src="/images/icon/arrow.png" alt="arrow">
+                                <img src="{% static "/images/icon/arrow.png" %}" alt="arrow">
                             </div>
                         </li>
                         <hr>
@@ -227,7 +229,7 @@
                                 </div>
                             </div>
                             <div class="div-arrow">
-                                <img src="/images/icon/arrow.png" alt="arrow">
+                                <img src="{% static "/images/icon/arrow.png" %}" alt="arrow">
                             </div>
                         </li>
                         <hr>
@@ -240,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="div-arrow">
-                                <img src="/images/icon/arrow.png" alt="arrow">
+                                <img src="{% static "/images/icon/arrow.png" %}" alt="arrow">
                             </div>
                         </li>
                         <hr>
@@ -253,7 +255,7 @@
                                 </div>
                             </div>
                             <div class="div-arrow">
-                                <img src="/images/icon/arrow.png" alt="arrow">
+                                <img src="{% static "/images/icon/arrow.png" %}" alt="arrow">
                             </div>
                         </li>
                     </ul>
@@ -269,7 +271,7 @@
             <div class="my-work">
                 <h2 class="main_h2 _anim-items">Сферы моей работы</h2>
                 <hr class="main_hr _anim-items">
-                <img src="/images/frame/frame_1.png" alt="" class="my-work__img-1">
+                <img src="{% static "/images/frame/frame_1.png" %}" alt="" class="my-work__img-1">
                 <div class="my-work__examples">
                     <div class="my-work__examples__consulting">
                         <p class="my-work__examples__main-p">Консультирование</p>
@@ -298,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="/images/frame/frame_2.png" alt="" class="my-work__img-2">
+                <img src="{% static "/images/frame/frame_2.png" %}" alt="" class="my-work__img-2">
             </div>
         </div>
      </section>
@@ -324,7 +326,7 @@
                                 Продолжительность данной фазы составляет 2-4 сессии
                             </p>
                             <div class="div_info_sessions">
-                                <img src="/images/icon/info.svg" alt="">
+                                <img src="{% static "/images/icon/info.svg" %}" alt="">
                             </div>
                         </div>
                         
@@ -354,7 +356,7 @@
                     <div class="interaction-formats__content">
                         <div class="interaction-formats__content__for-one">
                             <div>
-                                <img src="/images/icon/white_arrow.png" alt="">
+                                <img src="{% static "/images/icon/white_arrow.png" %}" alt="">
                                 <p class="first-p">
                                     Индивидуальная<br>консультация
                                 </p>
@@ -369,7 +371,7 @@
                         
                         <div class="interaction-formats__content__for-two">
                             <div>
-                                <img src="/images/icon/white_arrow.png" alt="">
+                                <img src="{% static "/images/icon/white_arrow.png" %}" alt="">
                                 <p class="first-p">
                                     Консультация<br>для пары
                                 </p>
@@ -400,7 +402,7 @@
                         <hr>
                         <div id="btn-cross-1">
                             <h4>Длительность встреч</h4>
-                            <img id="btn_1" src="./images/icon/cross.png" alt="">
+                            <img id="btn_1" src="{% static "./images/icon/cross.png" %}" alt="">
                         </div>
                         <p>
                             Длительность индивидуальной консультации - 45/50 мин - обусловлена особенностями человеческой психики. В случае
@@ -412,7 +414,7 @@
                         <hr id="hr-1" class="hr-1__hidden">
                         <div id="btn-cross-2">
                             <h4>Методы и подходы</h4>
-                            <img id="btn_2" src="./images/icon/cross.png" alt="">
+                            <img id="btn_2" src="{% static "./images/icon/cross.png" %}" alt="">
                         </div>
                         <p>
                             Я работаю через активное слушание и через метод майевтики. В моей работе я использую диагностические методы, такие
@@ -425,7 +427,7 @@
                         <hr id="hr-2" class="hr-2__hidden">
                         <div id="btn-cross-3">
                             <h4>Цель работы</h4>
-                            <img id="btn_3" src="./images/icon/cross.png" alt="">
+                            <img id="btn_3" src="{% static "./images/icon/cross.png" %}" alt="">
                         </div>
                         <p>
                             Главной целью моей работы является глубинное изменение жестких и дисфункциональных схем поведения (и мышления)
@@ -438,7 +440,7 @@
 
                         <div id="btn-cross-4">
                             <h4>Стоимость работы</h4>
-                            <img id="btn_4" src="./images/icon/cross.png" alt="">
+                            <img id="btn_4" src="{% static "./images/icon/cross.png" %}" alt="">
                         </div>
                         <p>
                             Фактуры психолога являются медицинскими расходами
@@ -470,9 +472,9 @@
                 </div>
                 <div class="quote__imgs _anim-items">
                     <span class="img-1 _anim-items">
-                        <img src="/images/sprout.png" alt="">
+                        <img src="{% static "/images/sprout.png" %}" alt="">
                     </span>
-                    <img src="/images/feather.png" alt="" class="img-2 _anim-items">
+                    <img src="{% static "/images/feather.png" %}" alt="" class="img-2 _anim-items">
                     <div class="img-3 _anim-items">
                                            
                         <p>
@@ -483,7 +485,7 @@
                             <a href="https://g.co/kgs/ZpACx8j" target="_blank">Google Business</a>
                         </p>
                     </div>
-                    <img src="/images/sky.png" alt="" class="img-4 _anim-items">
+                    <img src="{% static "/images/sky.png" %}" alt="" class="img-4 _anim-items">
                 </div>
             </div>
         </div>
@@ -524,7 +526,7 @@
                         <p>
                             Сексолог
                             <span>
-                                <img class="" src="./images/icon/info.svg" alt="">
+                                <img class="" src="{% static "./images/icon/info.svg" %}" alt="">
                             </span>
                         </p>
                         <a href="#">Политика конфиденциальности</a>
@@ -546,8 +548,8 @@
     </section>
     <!-- ENDS FOOTER -->
 
-    <script src="/js/script.js"></script>
-    <script src="/js/scroll.js"></script>
+    <script src="{% static "/js/script.js" %}"></script>
+    <script src="{% static "/js/scroll.js" %}"></script>
 
 </body>
 </html>

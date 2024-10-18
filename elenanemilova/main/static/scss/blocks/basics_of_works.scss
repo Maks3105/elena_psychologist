@@ -21,7 +21,7 @@
         }
 
         &__01 {
-            background-image: url(/images/background/01.png);
+            background-image: url('../images/background/01.png');
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
@@ -69,7 +69,7 @@
         }
 
         &__02 {
-            background-image: url(/images/background/02.png);
+            background-image: url('../images/background/02.png');
             background-repeat: no-repeat;
             background-position-x: 190px;
             padding-left: 480px;
